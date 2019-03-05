@@ -1,0 +1,8 @@
+ <ul ng-if="showExpList" class="nav flex-column">
+	   <li ng-repeat="item in experimentsList" class="nav-item">
+	     <a class="nav-link" ui-sref="{{item.expAdd}}" ng-click="showExpList =! showExpList">{{item.expName}}</a>
+	   </li>
+	   <li class="nav-item">
+	     <a class="nav-link disabled" ui-sref="/">Disabled</a>
+	   </li>
+	</ul>

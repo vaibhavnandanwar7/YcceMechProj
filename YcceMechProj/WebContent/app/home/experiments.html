@@ -1,0 +1,18 @@
+<!-- <h1>EXPERIMENTS</h1> -->
+
+<div>
+	 <ul ng-if="!showExpList" class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="#!experiments">Experiments</a></li>
+	    <li class="breadcrumb-item active">Rome</li>
+	  </ul>
+	  
+	    <ul ng-if="showExpList" class="nav flex-column">
+		   <li ng-repeat="item in experimentsList" class="nav-item">
+		     <a class="nav-link" ui-sref="{{item.expAdd}}" ng-click="showExpList =! showExpList">{{item.expName}}</a>
+		   </li>
+		   <li class="nav-item">
+		     <a class="nav-link disabled" ui-sref="/">Disabled</a>
+		   </li>
+		</ul>
+		<div ui-view class="fade"></div>
+</div>

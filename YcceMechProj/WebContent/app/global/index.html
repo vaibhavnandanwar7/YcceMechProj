@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="icon" ui-sref="home" type="image/png">
+			<title>Project</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- <link rel="stylesheet" href="./assets/libs/jQuery/jquery-ui.min.css"> -->
+			<script src="./assets/libs/jQuery/jquery-3.2.1.min.js"></script>
+			<script src="./assets/libs/jQuery/jquery-ui.min.js"></script>
+			<script src="./assets/libs/angularjs/angular.min.js"></script>
+			<script src="./assets/libs/angularjs/angular-animate.min.js"></script>
+			<!-- <script src="./assets/libs/angularjs/angular-route.js"></script> -->
+			<script src="./assets/libs/angularjs/angular-ui-router.min.js"></script>
+			<!-- <link rel="stylesheet" href="./assets/libs/bootstrap-3.3.7/css/bootstrap.css"> -->
+			<link rel="stylesheet" href="./assets/libs/bootstrap-4/css/bootstrap.min.css">
+			<script src="./assets/libs/bootstrap-4/js/popper.min.js"></script>
+			<script src="./assets/libs/bootstrap-4/js/bootstrap.min.js"></script>
+			<script src="./assets/libs/ui-bootstrap-tpls.min.js"></script>
+			<link rel="stylesheet" href="./assets/libs/font-awesome-4.6.3/css/font-awesome.min.css">
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw"></script>
+			<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw&callback=myMap"></script> -->
+			<link rel="stylesheet" href="./assets/css/styles.css">
+			
+			<!--  -->
+			<script src="./app/global/app.js"></script>
+			<script src="./app/global/route.js"></script>
+			<script src="./app/global/mainController.js"></script>
+			<script src="./app/home/contactController.js"></script>
+	</head>
+	<body data-ng-app="lssApp" >
+	<div data-ng-controller="mainController" >
+		<div>
+			<!-- HEADER -->
+			<div class="page-header text-center">
+			<!-- <h1 class="shake-content margin-botton-0"> -->
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="header_inner">
+								<!-- Brand and toggle get grouped for better mobile display -->
+								<div class="navbar-header col-md-12" style="text-align: center;">
+									<a class="logo_d logo clearfix" ui-sref="home">
+										<img src="assets/images/ycce_l.png" alt="logo" class="img-fluid  img-responsive">
+									</a>
+									<a class="logo_m logo clearfix" ui-sref="home" style="text-align: center;">
+										<img src="assets/images/logo_mobile.png" alt="YCCE-logo" class="img-fluid  img-responsive"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		<!-- 	</h1> -->
+			</div>
+			<div class="container">
+			<br>
+				<div class="row">
+					<div class="sidenav col-md-2">
+					  <a ui-sref="home">Home</a>
+					</div>
+					<div class="main col-md-10">
+					  <!-- NAVBAR -->
+							<!-- class: bg-dark -->
+							<nav class="navbar navbar-expand-md navbar-light sticky-top bg-dark">
+								<!-- Brand -->
+								<!-- <a class="navbar-brand" ui-sref="">Navbar</a> -->
+								
+								<!-- Toggler/collapsibe Button -->
+								<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+									<span class="navbar-toggler-icon"></span>
+								</button> -->
+								<div class="container-menu-button navbar-toggler margin-left-auto" data-toggle="collapse" data-target="#collapsibleNavbar" ng-class="{'change':isChangeActive}" ng-click="myFunction()">
+									<div class="bar1"></div>
+									<div class="bar2"></div>
+									<div class="bar3"></div>
+								</div>
+								<!-- Navbar links -->
+								<div class="collapse navbar-collapse" id="collapsibleNavbar">
+									<ul class="navbar-nav "><!-- margin-left-auto -->
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Experiment' }" ui-sref="experiments">Experiment</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Apparatus Used' }" ui-sref="apparatusUsed">Apparatus Used</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Applications' }" ui-sref="applications">Applications</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Feedback' }" ui-sref="feedback">Feedback</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contributers' }" ui-sref="contributers">Contributers</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About Us' }" ui-sref="aboutUs">About Us</a>
+										</li>
+									</ul>
+								</div> 
+							</nav>
+							<br>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a ui-sref="experiments">Experiments</a></li>
+							    <li class="breadcrumb-item active">Rome</li>
+							</ul>
+					</div>
+				</div>
+			</div>
+			<!-- NAVBAR -->
+			<!-- class: bg-dark -->
+			<!-- <nav class="navbar navbar-expand-md navbar-light sticky-top">
+				<div class="container-menu-button navbar-toggler margin-left-auto" data-toggle="collapse" data-target="#collapsibleNavbar" ng-class="{'change':isChangeActive}" ng-click="myFunction()">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				Navbar links
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav margin-left-auto">
+						<li class="nav-item">
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Portfolio' }" ui-sref="">Portfolio</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About' }" ui-sref="aboutUs">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contact' }" ui-sref="contact">Contact</a>
+						</li> 
+					</ul>
+				</div> 
+			</nav> -->
+		</div>
+		
+		<ui-view class="fade container">
+			<p class="text-center">
+				<b class="opacity-5">
+					Loading.........
+				</b>
+				<i class="fa fa-spinner fa-spin"></i>
+			</p>
+		</ui-view>
+	</div>
+</body>
+</html>
