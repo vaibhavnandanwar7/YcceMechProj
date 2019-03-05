@@ -43,17 +43,23 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 	            	$scope.activeMenu = '';
 	                break;
 	        }
-				if(currentLocation =="/experiments")
+				if(currentLocation =="/experiments"){
 					$scope.showExpList = true;
-				else{
+					var x = document.getElementsByClassName("fade2");
+					if(x && x.length){
+						document.getElementsByClassName("fade2")[0].style.display='none';
+						document.getElementsByClassName("fade2")[1].style.display='none';
+					}
+				}else{
 					$scope.showExpList = false;
+					document.getElementsByClassName("fade2")[0].style.display='block';
+					document.getElementsByClassName("fade2")[1].style.display='block';
 				}
 		});
 	
 	/**EXPERIMENTS*/
 	$scope.showExperiment = function(){
 		$scope.showExpList = !$scope.showExpList;
-		$scope.breadcrumb.Main = '';
 	};
 	$scope.experimentsList = [{"expName":"Scope of metrology laboratory and introduction of all metrological hand instruments and precision measuring instruments","expAdd":".exp1"},
 							{"expName":"Study of slip gauges and its uses description of slip gauges","expAdd":".exp2"},
