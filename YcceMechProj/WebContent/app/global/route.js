@@ -20,6 +20,42 @@
 	            url: '/exp2',
 	            templateUrl : "./app/home/experiments2.html",
 	        })
+	        .state('experiments.exp3', {
+	            url: '/exp3',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp4', {
+	            url: '/exp4',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp5', {
+	            url: '/exp5',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp6', {
+	            url: '/exp6',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp7', {
+	            url: '/exp7',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp8', {
+	            url: '/exp8',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp9', {
+	            url: '/exp9',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp10', {
+	            url: '/exp10',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
+	        .state('experiments.exp11', {
+	            url: '/exp11',
+	            templateUrl : "./app/home/experiments2.html",
+	        })
 	        .state('experiments.home', {
 	            url: '/expHome',
 	            templateUrl : "./app/home/experimentsHome.html",

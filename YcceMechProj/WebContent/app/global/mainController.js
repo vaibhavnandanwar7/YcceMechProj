@@ -53,15 +53,16 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 	$scope.showExperiment = function(){
 		$scope.showExpList = !$scope.showExpList;
 	};
-	$scope.experimentsList = [{"expName":"Experiment 1","expAdd":".exp1"},
-							{"expName":"Experiment 2","expAdd":".exp2"},
-							{"expName":"Experiment 3","expAdd":".exp3"},
-							{"expName":"Experiment 4","expAdd":".exp4"},
-							{"expName":"Experiment 5","expAdd":".exp5"},
-							{"expName":"Experiment 6","expAdd":".exp6"},
-							{"expName":"Experiment 7","expAdd":".exp7"},
-							{"expName":"Experiment 8","expAdd":".exp8"},
-							{"expName":"Experiment 9","expAdd":".exp9"},
-							{"expName":"Experiment 10","expAdd":".exp10"}];
+	$scope.experimentsList = [{"expName":"Scope of metrology laboratory and introduction of all metrological hand instruments and precision measuring instruments","expAdd":".exp1"},
+							{"expName":"Study of slip gauges and its uses description of slip gauges","expAdd":".exp2"},
+							{"expName":"To find the half tapered angle of work piece using sine bar","expAdd":".exp3"},
+							{"expName":"To find the effective diameter of a thread by two wire method with the help of floating carraige diameter measuring machine","expAdd":".exp4"},
+							{"expName":"Design of limit gauges","expAdd":".exp5"},
+							{"expName":"To find the various parameter of screw thread using tool maker’s microscope","expAdd":".exp6"},
+							{"expName":"To study control chart","expAdd":".exp7"},
+							{"expName":"Study of flatness of surface using monochromatic light with the help of fringe pattern","expAdd":".exp8"},
+							{"expName":"To study the profile of a given work piece using on optical profile projector","expAdd":".exp9"},
+							{"expName":"Measure the surface roughness of a given workpiece","expAdd":".exp10"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"}];
 	
 });
