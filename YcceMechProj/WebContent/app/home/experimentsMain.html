@@ -6,7 +6,7 @@
 	    <li class="breadcrumb-item active">Rome</li>
 	</ul>
 	  
-    <ul ng-if="showExpList" class="nav flex-column">
+    <ul class="nav flex-column">
 	   <li ng-repeat="item in experimentsList" class="nav-item">
 	     <a class="nav-link" ui-sref="{{item.expAdd}}" ng-click="showExpList =! showExpList">{{item.expName}}</a>
 	   </li>
