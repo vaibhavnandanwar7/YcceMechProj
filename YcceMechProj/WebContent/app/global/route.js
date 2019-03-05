@@ -8,7 +8,7 @@
 	            templateUrl : "./app/home/home.html",
 	        })
 	        .state('experiments', {
-	        	abstract: true,
+	        	/*abstract: true,*/
 	            url: '/experiments',
 	            templateUrl : "./app/home/experimentsMain.html",
 	        })
