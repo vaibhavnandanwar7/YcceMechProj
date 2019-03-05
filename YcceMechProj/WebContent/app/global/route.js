@@ -22,7 +22,7 @@
 	        })
 	        .state('experiments.home', {
 	            url: '/expHome',
-	            templateUrl : "./app/home/experiments1.html",
+	            templateUrl : "./app/home/experimentsHome.html",
 	        })
 	        .state('apparatusUsed', {
 	            url: '/apparatusUsed',
