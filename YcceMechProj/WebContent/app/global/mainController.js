@@ -3,6 +3,7 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 
 	$scope.isChangeActive = false;
 	$scope.activeMenu = '';
+	$scope.showExpList = true;
 	
 	/** To make element fade In-Out on scroll*/
 	$(window).scroll(function(){
@@ -42,10 +43,16 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 	            	$scope.activeMenu = '';
 	                break;
 	        }
+				if(currentLocation =="/experiments")
+					$scope.showExpList = true;
+				else
+					$scope.showExpList = false;
 		});
 	
 	/**EXPERIMENTS*/
-	
+	$scope.showExperiment = function(){
+		$scope.showExpList = !$scope.showExpList;
+	};
 	$scope.experimentsList = [{"expName":"Experiment 1","expAdd":".exp1"},
 							{"expName":"Experiment 2","expAdd":".exp2"},
 							{"expName":"Experiment 3","expAdd":".exp3"},
@@ -56,4 +63,5 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 							{"expName":"Experiment 8","expAdd":".exp8"},
 							{"expName":"Experiment 9","expAdd":".exp9"},
 							{"expName":"Experiment 10","expAdd":".exp10"}];
+	
 });
