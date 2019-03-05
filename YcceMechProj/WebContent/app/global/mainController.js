@@ -45,13 +45,15 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 	        }
 				if(currentLocation =="/experiments")
 					$scope.showExpList = true;
-				else
+				else{
 					$scope.showExpList = false;
+				}
 		});
 	
 	/**EXPERIMENTS*/
 	$scope.showExperiment = function(){
 		$scope.showExpList = !$scope.showExpList;
+		$scope.breadcrumb.Main = '';
 	};
 	$scope.experimentsList = [{"expName":"Scope of metrology laboratory and introduction of all metrological hand instruments and precision measuring instruments","expAdd":".exp1"},
 							{"expName":"Study of slip gauges and its uses description of slip gauges","expAdd":".exp2"},
