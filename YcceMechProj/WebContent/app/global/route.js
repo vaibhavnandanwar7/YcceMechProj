@@ -14,47 +14,47 @@
 	        })
 	        .state('experiments.exp1', {
 	            url: '/exp1',
-	            templateUrl : "./app/home/experiments1.html",
+	            templateUrl : "./app/home/experiments/experiments1.html",
 	        })
 	        .state('experiments.exp2', {
 	            url: '/exp2',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments2.html",
 	        })
 	        .state('experiments.exp3', {
 	            url: '/exp3',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments3.html",
 	        })
 	        .state('experiments.exp4', {
 	            url: '/exp4',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments4.html",
 	        })
 	        .state('experiments.exp5', {
 	            url: '/exp5',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments5.html",
 	        })
 	        .state('experiments.exp6', {
 	            url: '/exp6',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments6.html",
 	        })
 	        .state('experiments.exp7', {
 	            url: '/exp7',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments7.html",
 	        })
 	        .state('experiments.exp8', {
 	            url: '/exp8',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments8.html",
 	        })
 	        .state('experiments.exp9', {
 	            url: '/exp9',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments9.html",
 	        })
 	        .state('experiments.exp10', {
 	            url: '/exp10',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments10.html",
 	        })
 	        .state('experiments.exp11', {
 	            url: '/exp11',
-	            templateUrl : "./app/home/experiments2.html",
+	            templateUrl : "./app/home/experiments/experiments11.html",
 	        })
 	        .state('experiments.home', {
 	            url: '/expHome',
