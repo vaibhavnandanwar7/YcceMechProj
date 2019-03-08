@@ -19,7 +19,7 @@
 			<script src="./assets/libs/bootstrap-4/js/bootstrap.min.js"></script>
 			<script src="./assets/libs/ui-bootstrap-tpls.min.js"></script>
 			<link rel="stylesheet" href="./assets/libs/font-awesome-4.6.3/css/font-awesome.min.css">
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw"></script>
+			<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw"></script> -->
 			<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4ESWn_9eiMqloNa99XdwVdyHbgCFHIWw&callback=myMap"></script> -->
 			<link rel="stylesheet" href="./assets/css/styles.css">
 			
@@ -53,13 +53,13 @@
 				</div>
 		<!-- 	</h1> -->
 			</div>
-			<div class="container">
+			<div class="container-fluid">
 			<br>
 				<div class="row">
-					<div class="sidenav col-md-2">
+					<div class="sidenav col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center">
 					  <a ui-sref="home">Home</a>
 					</div>
-					<div class="main col-md-10">
+					<div class="main col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
 					  <!-- NAVBAR -->
 							<!-- class: bg-dark -->
 							<nav class="navbar navbar-expand-md navbar-light sticky-top bg-dark">
@@ -102,32 +102,9 @@
 					</div>
 				</div>
 			</div>
-			<!-- NAVBAR -->
-			<!-- class: bg-dark -->
-			<!-- <nav class="navbar navbar-expand-md navbar-light sticky-top">
-				<div class="container-menu-button navbar-toggler margin-left-auto" data-toggle="collapse" data-target="#collapsibleNavbar" ng-class="{'change':isChangeActive}" ng-click="myFunction()">
-					<div class="bar1"></div>
-					<div class="bar2"></div>
-					<div class="bar3"></div>
-				</div>
-				Navbar links
-				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav margin-left-auto">
-						<li class="nav-item">
-							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Portfolio' }" ui-sref="">Portfolio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About' }" ui-sref="aboutUs">About</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contact' }" ui-sref="contact">Contact</a>
-						</li> 
-					</ul>
-				</div> 
-			</nav> -->
 		</div>
 		
-		<ui-view class="fade container">
+		<ui-view class="fade container-fluid ">
 			<p class="text-center">
 				<b class="opacity-5">
 					Loading.........

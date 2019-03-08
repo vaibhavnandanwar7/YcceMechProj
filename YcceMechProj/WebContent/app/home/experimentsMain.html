@@ -8,11 +8,11 @@
 	  
     <ul ng-show="showExpList" class="nav flex-column">
 	   <li ng-repeat="item in experimentsList track by $index" class="nav-item">
-	     <a class="nav-link" ui-sref="{{item.expAdd}}" ng-click="showExperiment()">EXP {{$index +1}} - {{item.expName}}</a>
+	     <a class="nav-link padding-left-0" ui-sref="{{item.expAdd}}" ng-click="showExperiment()">EXP {{$index +1}} - {{item.expName}}</a>
 	   </li>
 	   <!-- <li class="nav-item">
 	     <a class="nav-link disabled" ui-sref="/">Disabled</a>
 	   </li> -->
 	</ul>
-	<div ui-view class="fade2"></div>
+	<div ui-view class="fade2 "></div>
 </div>

@@ -30,6 +30,19 @@
 	-webkit-transition: all 400ms;
 }
 
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .5rem;
+    margin-bottom: 0.5rem;
+    list-style: none;
+    background-color: #e9ecef;
+    border-radius: .25rem;
+    font-size: 0.7rem;
+}
+
 body{
 	/**height : 70em; old*/ 
 	height : 47em;
@@ -48,7 +61,21 @@ body{
 	background-color: white !important;
 	color: black !important;
 }
-
+.padding-left-0{
+	padding-left: 0;
+}
+.padding-top-0{
+	padding-top: 0;
+}
+.padding-right-0{
+	padding-right: 0;
+}
+.padding-bottom-0{
+	padding-bottom: 0;
+}
+.font-size-75{
+    font-size: 0.75rem;
+}
 /** old :  .fade {
     position: absolute;
     top: 12em;
@@ -59,12 +86,13 @@ body{
 }
  */
 .fade {
-    position: absolute;
-    top: 13em;
-    left: 24em;
+	position: absolute;
+    top: 12.5em;
+    left: 16%;
     right: 0;
-    height: 80%;
+    height: 71%;
     opacity: 1;
+    width: 82.5%;
 }
 
 .fade.ng-leave {
@@ -78,7 +106,7 @@ body{
 
 .fade2 {
 	position: absolute;
-    top: 2em;
+    top: 0em;
     left: 1em;
     right: 0;
     height: 80%;

@@ -1,5 +1,5 @@
 
-app.controller('mainController', function($scope, $location, $rootScope) {
+app.controller('mainController', function($scope, $location, $rootScope,$http,$state) {
 
 	$scope.isChangeActive = false;
 	$scope.activeMenu = '';
@@ -73,4 +73,17 @@ app.controller('mainController', function($scope, $location, $rootScope) {
 							{"expName":"Measure the surface roughness of a given workpiece","expAdd":".exp10"},
 							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"}];
 	
+	 $http.get('./app/global/connection.properties').then(function (response) {
+	        console.log('a is ', response.data.a);
+	        console.log('b is ', response.data.b);
+	      });
+	 
+	 function warning()
+	    {
+	       var currentLocation = $location.url();
+			var temp = currentLocation.split('/');
+			if(temp[1] === 'experiments' && temp.length >2)
+				$location.path('/experiments');
+	    }
+	    window.onbeforeunload = warning();
 });
