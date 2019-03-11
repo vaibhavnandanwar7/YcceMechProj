@@ -56,10 +56,10 @@
 			<div class="container-fluid">
 			<br>
 				<div class="row">
-					<div class="sidenav col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-center">
+					<div class="sidenav col-4 col-sm-3 col-md-2 col-lg-2 col-xl-2 text-center">
 					  <a ui-sref="home">Home</a>
 					</div>
-					<div class="main col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10">
+					<div class="main col-8 col-sm-9 col-md-10 col-lg-10 col-xl-10">
 					  <!-- NAVBAR -->
 							<!-- class: bg-dark -->
 							<nav class="navbar navbar-expand-md navbar-light sticky-top bg-dark">
@@ -76,25 +76,25 @@
 									<div class="bar3"></div>
 								</div>
 								<!-- Navbar links -->
-								<div class="collapse navbar-collapse" id="collapsibleNavbar">
+								<div class="collapse navbar-collapse" id="collapsibleNavbar" ng-click="myFunction()">
 									<ul class="navbar-nav "><!-- margin-left-auto -->
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Experiment' }" ui-sref="experiments">Experiment</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Experiment' }" ui-sref="experiments">Experiment</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Apparatus Used' }" ui-sref="apparatusUsed">Apparatus Used</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Apparatus Used' }" ui-sref="apparatusUsed">Apparatus Used</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Applications' }" ui-sref="applications">Applications</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Applications' }" ui-sref="applications">Applications</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Feedback' }" ui-sref="feedback">Feedback</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Feedback' }" ui-sref="feedback">Feedback</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contributers' }" ui-sref="contributers">Contributers</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'Contributers' }" ui-sref="contributers">Contributers</a>
 										</li>
 										<li class="nav-item">
-											<a class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About Us' }" ui-sref="aboutUs">About Us</a>
+											<a data-toggle="collapse" data-target=".navbar-collapse.show" class="nav-link" ng-class="{'activeMenu' : activeMenu == 'About Us' }" ui-sref="aboutUs">About Us</a>
 										</li>
 									</ul>
 								</div> 

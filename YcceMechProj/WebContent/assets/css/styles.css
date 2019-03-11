@@ -210,6 +210,23 @@ body{
 	.navbar-nav {
 		width: 10em;
 	}
+	.navbar-light .navbar-toggler {
+	    color: rgba(0,0,0,.5);
+	    border-color: #818181;
+	}
+	.bar1, .bar2, .bar3 {
+	    background-color: #818181 !important;
+	}
+	.fade {
+	    position: absolute !important;
+	    top: 43% !important;
+	    left: 33% !important;
+	    right: 0 !important;
+	    height: 71% !important;
+	    opacity: 1 !important;
+	    width: 66.5% !important;
+	}
+
 }
 .navbar-toggler {
 	padding: .1rem .7rem;
@@ -245,7 +262,7 @@ body{
 	.nav-link {
 		display: block;
 		padding: .2rem 1rem;
-	    height: 2em;
+	    /* height: 2em; */
 	}
 	.navbar-nav .nav-link {
 	    padding-right: 0;
