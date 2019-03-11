@@ -30,6 +30,10 @@
 	-webkit-transition: all 400ms;
 }
 
+.cursor-pointer{
+	cursor: pointer;
+}
+
 .breadcrumb {
     display: -ms-flexbox;
     display: flex;

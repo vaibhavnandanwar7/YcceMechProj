@@ -52,8 +52,11 @@ app.controller('mainController', function($scope, $location, $rootScope,$http,$s
 					}
 				}else{
 					$scope.showExpList = false;
+					var x = document.getElementsByClassName("fade2");
+					if(x && x.length){
 					document.getElementsByClassName("fade2")[0].style.display='block';
 					document.getElementsByClassName("fade2")[1].style.display='block';
+					}
 				}
 		});
 	
