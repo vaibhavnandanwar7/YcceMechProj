@@ -217,7 +217,7 @@ body{
 	.bar1, .bar2, .bar3 {
 	    background-color: #818181 !important;
 	}
-	.fade {
+	/* .fade {
 	    position: absolute !important;
 	    top: 43% !important;
 	    left: 33% !important;
@@ -225,6 +225,15 @@ body{
 	    height: 71% !important;
 	    opacity: 1 !important;
 	    width: 66.5% !important;
+	} */
+	.fade {
+	    position: absolute !important;
+	    top: 34% !important;
+	    left: 25% !important;
+	    right: 0 !important;
+	    height: 71% !important;
+	    opacity: 1 !important;
+	    width: 75% !important;
 	}
 
 }
