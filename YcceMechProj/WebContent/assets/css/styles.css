@@ -28,10 +28,20 @@
 * {
 	transition: all 400ms;
 	-webkit-transition: all 400ms;
+	border-radius: 0.2em;
+}
+
+.max-width-100{
+    max-width: 100%;	
 }
 
 .cursor-pointer{
 	cursor: pointer;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid #ddd;
+    width: fit-content;
 }
 
 .breadcrumb {
@@ -66,16 +76,20 @@ body{
 	color: black !important;
 }
 .padding-left-0{
-	padding-left: 0;
+	padding-left: 0 !important;
 }
 .padding-top-0{
-	padding-top: 0;
+	padding-top: 0 !important;
 }
 .padding-right-0{
-	padding-right: 0;
+	padding-right: 0 !important;
 }
 .padding-bottom-0{
-	padding-bottom: 0;
+	padding-bottom: 0 !important;
+}
+
+.padding-0{
+	padding: 0;
 }
 .font-size-75{
     font-size: 0.75rem;
@@ -90,15 +104,18 @@ body{
 }
  */
 .fade {
-	position: absolute;
+	/* position: absolute;
     top: 12.5em;
     left: 16%;
-    right: 0;
+    right: 0; */
     height: 71%;
     opacity: 1;
-    width: 82.5%;
+    width: 97.5%;
 }
-
+.fade.div{
+    max-height: 90.7%;
+    overflow: auto;
+}
 .fade.ng-leave {
 	-webkit-transition: all 0.1s ease-in-out;
 	transition: all 0.1s ease-in-out;
@@ -109,13 +126,15 @@ body{
 }
 
 .fade2 {
-	position: absolute;
+	/* position: absolute;
     top: 0em;
     left: 1em;
-    right: 0;
+    right: 0; */
     height: 80%;
     opacity: 1;
     display: none;
+    padding-top: 0.2rem;
+    width: 100%;
 }
 
 .fade2 .* {
@@ -170,8 +189,8 @@ body{
 	    border: 0px solid green;
 	    display: block;
 	}
-}
-@media (max-width: 768px){
+/* }
+@media (max-width: 768px){ */
 	.logo_d {
 	    border: 0px solid green;
 	    display: none;
@@ -202,7 +221,20 @@ body{
 }
 
 /** NAVBAR */
+
 @media (max-width: 768px){
+	.fade {
+	    /* position: absolute !important;
+	    top: 34% !important;
+	    left: 25% !important;
+	    right: 0 !important; */
+	    height: 71% !important;
+	    opacity: 1 !important;
+	    width: 75% !important;
+	}
+	
+/* }
+@media (max-width: 768px){ */
 	.navbar-collapse {
     	z-index: 9999;
     	background-color: white;
@@ -227,10 +259,10 @@ body{
 	    width: 66.5% !important;
 	} */
 	.fade {
-	    position: absolute !important;
+	    /* position: absolute !important;
 	    top: 34% !important;
 	    left: 25% !important;
-	    right: 0 !important;
+	    right: 0 !important; */
 	    height: 71% !important;
 	    opacity: 1 !important;
 	    width: 75% !important;
@@ -350,11 +382,40 @@ body{
   color: #f1f1f1;
 }
 
+@media screen and (max-width: 768px) and (min-width: 377px){
+	.sidenav {
+	    height: 33em !important;
+	}
+	.main{
+	    max-height: 33em !important;
+	    overflow: auto !important;
+	}
+	body {
+	    height: 46em;
+	}
+}
+
+@media screen and (max-width: 376px){
+	.sidenav {
+	    height: 29em !important;
+	}
+	.main {
+	    max-height: 29em !important;
+	    overflow: auto !important;
+	}
+	body {
+	    height: 42em;
+	}
+}
 /** .main {
   margin-left: 160px; Same as the width of the sidenav
   font-size: 28px; Increased text to enable scrolling
   padding: 0px 10px;
 } */
+.main{
+    max-height: 38em;
+    overflow: auto;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

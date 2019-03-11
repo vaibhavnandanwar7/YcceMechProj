@@ -74,6 +74,11 @@ app.controller('mainController', function($scope, $location, $rootScope,$http,$s
 							{"expName":"Study of flatness of surface using monochromatic light with the help of fringe pattern","expAdd":".exp8"},
 							{"expName":"To study the profile of a given work piece using on optical profile projector","expAdd":".exp9"},
 							{"expName":"Measure the surface roughness of a given workpiece","expAdd":".exp10"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"},
+							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"},
 							{"expName":"Draw the tolerance chart for given operation","expAdd":".exp11"}];
 	
 	 $http.get('./app/global/connection.properties').then(function (response) {
